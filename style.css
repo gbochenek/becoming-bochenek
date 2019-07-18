@@ -1,0 +1,282 @@
+@import url("css/modal.css");
+@import url("css/lds.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 300px;
+  height: 100%;
+  width: 100%;
+  background: black;
+}
+.rsvp-error {
+  color: red;
+  display: none;
+  margin: 5px;
+}
+
+.food-form label {
+  width: 184px;
+  display: inline-block;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background-image: url(engagement.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  background-position: top;
+}
+
+.links {
+  padding-top: 20px;
+  display: none;
+}
+
+.links a {
+  color: black;
+}
+
+body {
+  margin: 0;
+}
+
+.name-input {
+  color: white;
+}
+
+.food-form input {
+  width: 2em;
+}
+
+input {
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -150px;
+  visibility: hidden;
+}
+
+.outer-pane {
+  padding-top: 200px;
+}
+
+button {
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: lightslategray;
+}
+.center-pane {
+  background-color: white;
+  border: 1px dashed #ddd;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
+  color: black;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 100px;
+  font-size: 16px;
+}
+
+.center-pane div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 32px;
+}
+
+.nav-menu {
+  display: block;
+}
+@media (max-width: 880px) {
+  .background-image {
+    background-size: auto 100%;
+  }
+  .nav-menu {
+    display: none;
+  }
+
+  .center-pane {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .links {
+    display: initial;
+  }
+}
+
+.error {
+  color: red;
+}
+
+.suggestion-box {
+  padding: 2px;
+  color: gray;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  word-spacing: 0;
+}
+
+.suggestion-box span {
+  padding: 0;
+  margin: 0;
+}
+
+.suggestion-box .typed {
+  color: black;
+}
+
+.rsvp-container {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  font-size: 1.73em;
+}
+
+.nav-menu li {
+  float: left;
+}
+
+.nav-menu li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav-menu li a:hover {
+  background-color: lightslategray;
+}
+
+.wedding-party {
+  column-count: 2;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+@media (max-width: 880px) {
+  .wedding-party {
+    column-count: 1;
+  }
+}
+
+.wedding-party .party-member {
+  padding: 10px;
+  break-inside: avoid;
+}
+
+.party-member .photo {
+  background-image: url(wedding-party/scout-bochenek.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  border: black 1px solid;
+}
+
+.party-member.patrick .photo {
+  background-image: url(wedding-party/patrick-mcmullen.jpg);
+}
+
+.party-member.todd .photo {
+  background-image: url(wedding-party/todd-chard.jpg);
+}
+
+.party-member.chris .photo {
+  background-image: url(wedding-party/chris-chambers.jpg);
+}
+
+.party-member.katie .photo {
+  background-image: url(wedding-party/katie-chambers.jpg);
+}
+
+.party-member.cody .photo {
+  background-image: url(wedding-party/cody-chambers.jpg);
+}
+
+.party-member.colleen .photo {
+  background-image: url(wedding-party/colleen-selzer.jpg);
+}
+.party-member.ryan .photo {
+  background-image: url(wedding-party/ryan-lockwood.jpg);
+}
+.party-member.kaitlin .photo {
+  background-image: url(wedding-party/kaitlin-fegan.jpg);
+}
+
+.party-member.kara .photo {
+  background-image: url(wedding-party/kara-eggebrecht.jpg);
+}
+
+.party-member.ben .photo {
+  background-image: url(wedding-party/ben-sherman.jpg);
+}
+
+.party-member.chelsea .photo {
+  background-image: url(wedding-party/chelsea-dost.jpg);
+}
+.party-member.fred .photo {
+  background-image: url(wedding-party/fred-griefer.jpg);
+}
+
+.party-member.jake .photo {
+  background-image: url(wedding-party/jake-vanwoerkom.jpg);
+}
+
+.party-member.maribel .photo {
+  background-image: url(wedding-party/maribel-mcmullen.jpg);
+}
+.party-member.liz .photo {
+  background-image: url(wedding-party/liz-chambers.jpg);
+}
+.party-member.sam .photo {
+  background-image: url(wedding-party/sam-bochenek.jpg);
+}
+
+.party-member.gaetano .photo{
+  background-image: url(wedding-party/gaetano-pressimone.jpg);
+}
+.party-member .name {
+  font-weight: bold;
+}
+
+.party-member .honor {
+  font-style: italic;
+}
